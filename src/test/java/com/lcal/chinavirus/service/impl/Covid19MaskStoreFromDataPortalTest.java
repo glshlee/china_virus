@@ -20,7 +20,7 @@ public class Covid19MaskStoreFromDataPortalTest {
         // given
 
         // when
-        List<MaskStore> maskStores = maskStoreService.getMaskStore();
+        List<MaskStore> maskStores = maskStoreService.getAllMaskStore();
 
         // then
         assertNotEquals(0, maskStores.size());

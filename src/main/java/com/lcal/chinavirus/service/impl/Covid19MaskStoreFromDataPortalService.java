@@ -13,7 +13,7 @@ public class Covid19MaskStoreFromDataPortalService implements Covid19MaskStoreSe
     private static final String URI = "https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1/stores/json";
 
     @Override
-    public List<MaskStore> getMaskStore() {
+    public List<MaskStore> getAllMaskStore() {
         return callAllMaskStoreJsonString().getStoreInfos();
     }
 
