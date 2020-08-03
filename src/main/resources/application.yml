@@ -16,10 +16,19 @@ spring:
       settings:
         trace: false
         web-allow-others: false
-  thymeleaf:
-    cache: false
+  devtools:
+    livereload:
+      enabled: false
+#  handlebars:
+#    cache: false
 logging:
   level:
     jdbc:
       sqltiming: "DEBUG"
       resultsettable: "DEBUG"
+
+    org:
+      springframework:
+        boot:
+          autoconfigure: "ERROR"
+

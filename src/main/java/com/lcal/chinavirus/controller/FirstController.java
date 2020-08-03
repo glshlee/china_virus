@@ -1,14 +1,11 @@
 package com.lcal.chinavirus.controller;
 
 import com.lcal.chinavirus.service.HospitalService;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.h2.util.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class FirstController{
@@ -22,10 +19,6 @@ public class FirstController{
         return "main"; 
     } 
     
-    @RequestMapping(value="first",method=RequestMethod.GET)
-    public void setFirstMainView() {
-
-    }
     @GetMapping({"/excel", "/Excel"})
     public String excelLoad(Model model){
 

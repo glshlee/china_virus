@@ -9,9 +9,9 @@ var main = {
 
     save : function(){
         var data = {
-            title : $('#title').val();
-            author : $('#author').val();
-            content : $('#contetn').val();
+//            title : $('#title').val(),
+//            author : $('#author').val(),
+//            content : $('#contetn').val()
         };
 
         $.ajax({

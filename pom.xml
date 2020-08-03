@@ -17,6 +17,7 @@
         <relativePath/>
     </parent>
 
+
     <properties>
         <java.version>1.8</java.version>
         <log4jdbc.log4j2.version>1.16</log4jdbc.log4j2.version>
@@ -37,6 +38,12 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>2.2.6.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
@@ -48,6 +55,12 @@
             <groupId>org.bgee.log4jdbc-log4j2</groupId>
             <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
             <version>${log4jdbc.log4j2.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
         </dependency>
 
         <dependency>
@@ -127,5 +140,6 @@
                 <artifactId>sonar-maven-plugin</artifactId>
             </plugin>
         </plugins>
+
     </build>
 </project>

@@ -121,8 +121,8 @@ buildNumber.properties
 .history
 
 #IntelliJ
-.idea
-.iml
+*.idea
+*.iml
 
 ### h2DB ###
 data
